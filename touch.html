@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="touch.css">
+    <script src="touch.js"></script>
+    <link rel="icon" type="image/png" href="img/dp-logo.png">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a href="index.html"><img class="nav-logo" height="50px" width="50px" src="img/dp-logo.png" alt="dp-logo"></a>
+                <button class="dropdown-toggle">
+                    <span class="hamburger">&#9776;</span>
+                    <span class="close-icon">&times;</span>
+                </button>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-link" id="about"><a href="about.html">About me</a></li>
+                <li class="nav-link" id="projects"><a href="projects.html">Projects</a></li>
+                <li class="nav-link" id="contact"><a href="touch.html">Get in Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Get in touch </h1>
+        <p> Message now and get reply in 24 hours</p>
+        <form id="contactForm" method="post" action="send-email.php" >
+            <div class="form-group">
+                <label for="name">Name<span style="color: red;">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email<span style="color: red;">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message<span style="color: red;">*</span></label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

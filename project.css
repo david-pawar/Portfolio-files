@@ -1,0 +1,25 @@
+.project-img {
+    height: 150px;
+    width: 150px;
+    transition: 0.3s all ease-in-out ;
+    padding-bottom: 50px;
+}
+.project-img:hover{
+    transform: scale(1.4);
+}
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.project-description {
+    background: white;
+}
+.project-heading{
+    height: 40ppx;
+    width: 180px;
+    background: rgb(165, 233, 165);
+    border-radius: 20px;
+    text-align: center;
+}
